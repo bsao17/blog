@@ -3,4 +3,5 @@ from .models import BlogPost
 
 
 def articles(request):
-    return render(request, "blog/article.html", context={'title': BlogPost.title})
+    blogs = BlogPost.objects.all()
+    return render(request, "blog/article.html", context={'blogs': blogs})
