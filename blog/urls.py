@@ -4,5 +4,5 @@ from .views import articles, api
 
 urlpatterns = [
     path('', articles),
-    path('rest', api)
+    path('api', api)
 ]
