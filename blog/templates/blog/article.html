@@ -8,9 +8,11 @@ articles
 
     <h1 class="text-center">{% block articl_title %} Maitriser Docker {% endblock %}</h1>
     {% for blog in blogs %}
-    <ul>
-        <li>{{ blog.title }}</li>
+<hr>
+    <ul class="text-center">
+        <li class="list-group-item"><h4>{{blog.id}} - {{ blog.title }}</h4></li>
     </ul>
+<hr>
     {% endfor %}
 
 {% endblock %}
